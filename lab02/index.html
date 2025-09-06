@@ -4,113 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Blog</title>
-    <style>
-        /* Add some basic styling */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        header {
-            background: #080000;
-            color: rgb(247, 232, 232);
-            padding: 10px 0;
-            text-align: center;
-        }
-
-        header nav ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-        header nav ul li a {
-            color: rgb(252, 245, 245);
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        header nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 20px;
-        }
-
-        section {
-            margin-bottom: 20px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #020202;
-            color: white;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>Learning Web Standards</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Welcome to My Blog</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1 class="title">Learning Web Standards</h1>
     </header>
 
     <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Welcome to my blog! Here, I will be sharing my thoughts and reflections on various topics, starting with my experience learning HTML.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>This blog is a place for me to share my journey in web development. I'm learning how to code and build websites, and I'm excited to document my progress here.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>If you have any questions or want to get in touch, feel free to send me an email at <a href="mailto:sh1206226@email.ccbcmd.edu">sh1206226@email.ccbcmd.edu</a>.</p>
-        </section>
-
         <article>
-            <h2>Reflection on HTML Basics</h2>
-            <p>Today, I learned how to write basic HTML and structure a webpage using semantic tags. I practiced creating a header, main content area, and footer, as well as understanding the purpose of different tags like <strong>h1</strong>, <strong>h2</strong>, <strong>h3</strong>, and lists.</p>
-            
-            <h3>Key Takeaways:</h3>
+            <h2>Labs 1 &amp; 2</h2>
+            <p><em>Published by the one and only DAREALSIB</em></p>
+            <p>
+                This is my first webpage. In the beginning, it was hard, but when I stopped and paid attention, it became easier. 
+                I approached each problem by breaking it down into smaller parts, which made things less overwhelming. Whenever I got stuck, I asked my professor for help. 
+                I made sure to double-check my code for errors and typos before submitting. Overall, this assignment helped me gain confidence with HTML and showed me the value of taking things step by step. Looking forward to the next challenge.
+            </p>
+
+            <h3>What I Learned</h3>
             <ul>
-                <li>HTML is essential for building web pages.</li>
-                <li>Semantic tags help with better page structure and SEO.</li>
+                <li>I learned how to use GitHub</li>
+                <li>I learned how to write HTML code</li>
+                <li>I learned what each code meant</li>
             </ul>
 
-            <h3>Ordered List Example:</h3>
-            <ol>
-                <li>Learn HTML basics.</li>
-                <li>Practice writing clean code.</li>
-            </ol>
-
-            <p>To learn more about HTML, check out this <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML documentation on MDN</a>.</p>
+            <p>
+                I learned a lot from: 
+                <a href="https://html.com/" target="_blank">this HTML.com page</a>
+            </p>
         </article>
     </main>
+    
     <footer>
-        <p>Created by sibghatullah sheikh</p>
+        <p>csit 121 work.</p>
+        <p>Current UTC time: <span id="currentTime"></span></p>
     </footer>
 </body>
-
 </html>
-
-
