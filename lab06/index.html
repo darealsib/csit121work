@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LAB 06 – User Interface & Usability</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #7d4a4a;
+      color: #000000;
+    }
+
+    header {
+      background-color: #935e5e;
+      color: rgb(0, 0, 0);
+      text-align: center;
+      padding: 20px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .sub-header {
+      background-color: #a65a5a;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .sub-header span {
+      font-size: 14px;
+      font-weight: normal;
+      color: #222;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      background-color: white;
+      margin: 20px;
+      border: 3px solid #ccc;
+    }
+
+    .left-panel {
+      background-color: #ffffff;
+      color: #7a3838;
+      padding: 20px;
+      font-size: 16px;
+    }
+
+    .left-panel h3 {
+      color: #8a4b4b;
+      border-bottom: 2px solid #f95a5a;
+      padding-bottom: 5px;
+    }
+
+    .left-panel p {
+      margin: 10px 0;
+      color: #8e4242;
+    }
+
+    .main-content {
+      padding: 25px;
+    }
+
+    .main-content h2 {
+      color: #7d4141;
+      text-align: center;
+    }
+
+    .main-content img {
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+      border: 1px solid #814141;
+    }
+
+    .main-content h3 {
+      color: #000;
+      margin-top: 30px;
+    }
+
+    .purple-box {
+      background-color: #814343;
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      margin: 20px 0 0 0;
+    }
+
+    .resources a {
+      color: #824646;
+      text-decoration: none;
+    }
+
+    .resources a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #f6f6f6;
+      padding: 15px;
+      text-align: left;
+      font-size: 14px;
+      margin-top: -10px;
+    }
+
+    @media (max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>User Interface & Usability</header>
+
+  <div class="sub-header">
+    LAB 06 <br>
+    <span>Published on October 16, 2025 by darealsib</span>
+  </div>
+
+  <div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+      <h3>Accessibility Checker Audit Results:</h3>
+      <p><strong>3</strong> Errors</p>
+      <p><strong>3</strong> Contrast Errors</p>
+      <p><strong>15</strong> Alerts</p>
+      <p><strong>23</strong> Features</p>
+      <p><strong>57</strong> Structural Elements</p>
+      <p><strong>223</strong> ARIA Elements</p>
+
+      <h3>Website Organization:</h3>
+      <p>Hierarchical</p>
+
+      <h3>CRAP Design Principle:</h3>
+      <p><strong>Contrast</strong><br>
+      Some text overlaps bright backgrounds, lowering readability.</p>
+
+      <p><strong>Repetition</strong><br>
+      Consistent icons and button styles create a clear visual identity.</p>
+
+      <p><strong>Alignment</strong><br>
+      Content sections and navigation menus are neatly aligned.</p>
+
+      <p><strong>Proximity</strong><br>
+      Related topics (donate, adopt, volunteer) are grouped together for better usability.</p>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+      <h2>Site Evaluation</h2>
+      <p><strong>Website Name:</strong> The Humane Society of the United States</p>
+      <p><strong>URL:</strong> <a href="https://www.humanesociety.org/" target="_blank">https://www.humanesociety.org/</a></p>
+      <p><em>The Humane Society works to protect animals nationwide through rescue missions, advocacy, and education.</em></p>
+
+      <img src="https://www.humanesociety.org/themes/custom/hsus/img/og-image.png" alt="Humane Society homepage preview">
+
+      <h3>First Impression</h3>
+      <p>
+        The Humane Society website looks professional and caring. It uses emotional photos and organized navigation to
+        connect users with its mission. Clear call-to-action buttons like “Donate” and “Adopt” make it easy to engage.
+        However, the text on some banner images is hard to read, and better contrast could improve accessibility.
+      </p>
+
+      <h3>Results</h3>
+      <p>
+        After running the <a href="https://wave.webaim.org/" target="_blank">WAVE Accessibility Checker</a>,
+        the site showed <strong>3 errors</strong> and <strong>3 contrast errors</strong>, along with 
+        <strong>15 alerts</strong> and <strong>23 features</strong>. The errors mainly involve missing alt text
+        and low contrast between text and images. Despite this, the website uses a strong ARIA structure 
+        (<strong>223 elements</strong>) and <strong>57 structural elements</strong> that help assistive technologies
+        interpret the layout effectively. The overall accessibility and usability are solid but could improve with 
+        a few design refinements.
+      </p>
+
+      <div class="purple-box">
+        <h3>Recommendations to Improve the Website</h3>
+        <ul>
+          <li>Increase contrast between text and background images.</li>
+          <li>Ensure all meaningful images include descriptive alt text.</li>
+          <li>Fix redundant or mislabeled ARIA attributes.</li>
+          <li>Add stronger focus indicators for keyboard navigation.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <h3>Resources:</h3>
+    <div class="resources">
+      <a href="https://wave.webaim.org/" target="_blank">Accessibility Checker</a><br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Standards" target="_blank">MDN – Web Standards</a><br>
+      <a href="https://www.w3schools.com/html/" target="_blank">W3Schools – HTML Introduction</a><br>
+      <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-Tricks – Flexbox Layout Guide</a>
+    </div>
+  </footer>
+
+</body>
+</html>
