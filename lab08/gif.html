@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GIF – lab08</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>GIF</h1>
+    <p>Format: <strong>GIF</strong> (Graphics Interchange Format)</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <h2>Description of the Image</h2>
+      <figure>
+        <img src="https://media.giphy.com/media/bEs40jYsdQjmM/giphy.gif" alt="Tom from Tom and Jerry looking very tired in a looping GIF">
+        <figcaption>Tom the cat falling asleep in a looping GIF.</figcaption>
+      </figure>
+    </article>
+
+    <article class="card">
+      <h2>Image File Type Info</h2>
+      <ul>
+        <li>Supports animation and simple transparency.</li>
+        <li>Limited to 256 colors.</li>
+        <li>Commonly used for memes and reaction images.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Why I Chose This Image</h2>
+      <p>I chose this GIF because it’s funny and relatable. Tom looks tired and ready to fall asleep, which is exactly how I feel sometimes when doing homework late at night. GIFs are great for showing emotions.</p>
+    </article>
+
+    <article class="card">
+      <h2>Source / Credit</h2>
+      <p>From the cartoon <em>Tom and Jerry</em>. GIF from <a href="https://giphy.com/gifs/bEs40jYsdQjmM" target="_blank" rel="noopener">Giphy</a>.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 • CSIT 121 • lab08</p>
+  </footer>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="gif.html">GIF</a>
+    <a href="jpg.html">JPG</a>
+    <a href="png.html">PNG</a>
+  </nav>
+
+  <script>
+    const links = document.querySelectorAll('.bottom-nav a');
+    links.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>
