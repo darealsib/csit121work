@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PNG – lab08</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>PNG</h1>
+    <p>Format: <strong>PNG</strong> (Portable Network Graphics)</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <h2>Description of the Image</h2>
+      <figure>
+        <img src="images/clock-2029613_1280.png" alt="A golden hourglass PNG image">
+        <figcaption>An hourglass with golden edges and sand inside.</figcaption>
+      </figure>
+    </article>
+
+    <article class="card">
+      <h2>Image File Type Info</h2>
+      <ul>
+        <li>Lossless compression (keeps sharp detail).</li>
+        <li>Supports transparency.</li>
+        <li>Best for logos, graphics, and UI elements.</li>
+      </ul>
+    </article>
+
+    <article class="card">
+      <h2>Why I Chose This Image</h2>
+      <p>I chose this hourglass because it reminds me of how time is always running when working on assignments. It also shows how PNG keeps edges crisp, which is great for graphics like this.</p>
+    </article>
+
+    <article class="card">
+      <h2>Source / Credit</h2>
+      <p>Image from <a href="https://pixabay.com/" target="_blank" rel="noopener">Pixabay</a> (free to use).</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 • CSIT 121 • lab08</p>
+  </footer>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav">
+    <a href="index.html">Home</a>
+    <a href="gif.html">GIF</a>
+    <a href="jpg.html">JPG</a>
+    <a href="png.html">PNG</a>
+  </nav>
+
+  <script>
+    const links = document.querySelectorAll('.bottom-nav a');
+    links.forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  </script>
+</body>
+</html>

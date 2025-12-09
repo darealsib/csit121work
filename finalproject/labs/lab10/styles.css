@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+    background-image: url("images/bg-texture.png");
+    background-repeat: repeat;
+}
+
+header, main, footer, nav {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+h1, h2 {
+    margin: 0.4em 0;
+}
+
+nav {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+nav a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: #0A5ACB;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
